@@ -1,0 +1,2 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Adding new profanity string and updating input character/text with replacement string","Filtering profanity for valid texts after adding new invalid profanity string","SUCCESS","2021-07-18T21:33:15.612Z[Etc/UTC]","0.0","0.54"

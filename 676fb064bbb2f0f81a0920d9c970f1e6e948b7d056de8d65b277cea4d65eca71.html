@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8"/>
-    <title>Checking profanity content in a given text</title>
+    <title>Filtering profanity for valid texts after adding new valid profanity string</title>
 <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 <link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
 <link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
@@ -127,8 +127,8 @@
             <a href="index.html" class="breadcrumbs">Home</a>
 
             > <a href="33737cb62f7016b9e6d768221de603ee35991589a34bed6c9e5a02ac4c52ad1a.html">Profanity Filter</a>
-            > <a href="a4313eaad8332c15b767e0572f9a8991f8bba950373aad1f0b0af22d0cd5a543.html">Checking Profanity Content In A Given Text</a>
-        > Checking profanity content in a given text
+            > <a href="8f663f42ce605c9fa378f1669a45b005764c2fb65c85c8a435d920eeeea3784e.html">Adding New Profanity String And Updating Input Character/Text With Replacement String</a>
+        > Filtering profanity for valid texts after adding new valid profanity string
         </span>
         </div>
         <div class="rightbg"></div>
@@ -167,7 +167,7 @@
                                 <div>
                                     <h3 class="discreet-story-header">
                                         <i class="fa fa-2x fa-comments-o"></i>
-                                        <span class="story-header-title">Checking Profanity Content In A Given Text </span>
+                                        <span class="story-header-title">Adding New Profanity String And Updating Input Character/Text With Replacement String </span>
                                     </h3>
 
                                 </div>
@@ -192,7 +192,7 @@
                             <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon fa-2x' title='SUCCESS'></i></a></span>
                             <span class="test-case-title">
                                 <span class="success-color">
-                                    Checking profanity content in a given text
+                                    Filtering profanity for valid texts after adding new valid profanity string
                                         <span class="related-issue-title"></span>
                                 </span>
                             </span>
@@ -212,7 +212,7 @@
         <div class="story-title">
             <h3 class="story-header">Scenario Outline</h3>
 
-            <div class="scenario">When Siva requests a "&lt;text&gt;" to be checked for profanity<br>Then he should be shown with the "&lt;result&gt;" in plain text format</div>
+            <div class="scenario">When Siva requests a "&lt;text&gt;" after filtering using new "&lt;profanity String&gt;" by replacing with "&lt;replacement char&gt;" character in "&lt;format&gt;"<br>Then he should be able to view the "&lt;filtered text&gt;" returned in requested "&lt;format&gt;"</div>
 
         </div>
 
@@ -232,35 +232,47 @@
                     <tr>
                         <th>#</th>
                             <th>Text</th>
-                            <th>Result</th>
+                            <th>Format</th>
+                            <th>Profanity String</th>
+                            <th>Replacement Char</th>
+                            <th>Filtered Text</th>
                     </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <td class="test-SUCCESS"><a href="#0">1</a></td>
                                 <td class="test-SUCCESS"><a
-                                            href="#0">sample</a>
+                                            href="#0">this is awesome</a>
                                 </td>
                                 <td class="test-SUCCESS"><a
-                                            href="#0">false</a>
+                                            href="#0">json</a>
+                                </td>
+                                <td class="test-SUCCESS"><a
+                                            href="#0">this,some</a>
+                                </td>
+                                <td class="test-SUCCESS"><a
+                                            href="#0"></a>
+                                </td>
+                                <td class="test-SUCCESS"><a
+                                            href="#0">**** is awe****</a>
                                 </td>
                         </tr>
                         <tr>
                             <td class="test-SUCCESS"><a href="#1">2</a></td>
                                 <td class="test-SUCCESS"><a
-                                            href="#1">smarta$$</a>
+                                            href="#1">this is a test</a>
                                 </td>
                                 <td class="test-SUCCESS"><a
-                                            href="#1">true</a>
-                                </td>
-                        </tr>
-                        <tr>
-                            <td class="test-SUCCESS"><a href="#2">3</a></td>
-                                <td class="test-SUCCESS"><a
-                                            href="#2">class</a>
+                                            href="#1">xml</a>
                                 </td>
                                 <td class="test-SUCCESS"><a
-                                            href="#2">false</a>
+                                            href="#1">a</a>
+                                </td>
+                                <td class="test-SUCCESS"><a
+                                            href="#1">-</a>
+                                </td>
+                                <td class="test-SUCCESS"><a
+                                            href="#1">this is - test</a>
                                 </td>
                         </tr>
                     </tbody>
@@ -300,7 +312,7 @@
                                 <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0')"
                                    style="display:block;">
                                     <span class="top-level-step">
-                                                1: Checking profanity content in a given text ({text=sample, result=false})
+                                                1: Filtering profanity for valid texts after adding new valid profanity string ({text=this is awesome, format=json, profanity String=this,some, replacement char=, filtered text=**** is awe****})
                                         </span>
                                 </a>
                                 <span class="evidence">
@@ -309,7 +321,7 @@
                         </td>
 
                         <td width="130"><span class="top-level-step">SUCCESS</span></td>
-                        <td width="100"><span class="top-level-step">0.15s</span></td>
+                        <td width="100"><span class="top-level-step">3.77s</span></td>
                     </tr>
                         <tr>
                             <td colspan="5">
@@ -331,7 +343,7 @@
                                 <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0-0')"
                                    style="display:block;">
                                     <span class="nested-step">
-                                                When Siva requests a "sample" to be checked for profanity
+                                                When Siva requests a "this is awesome" after filtering using new "this,some" by replacing with "" character in "json"
                                         </span>
                                 </a>
                                 <span class="evidence">
@@ -340,7 +352,7 @@
                         </td>
 
                         <td width="130"><span class="nested-step">SUCCESS</span></td>
-                        <td width="100"><span class="nested-step">0.15s</span></td>
+                        <td width="100"><span class="nested-step">3.04s</span></td>
                     </tr>
                         <tr>
                             <td colspan="5">
@@ -362,7 +374,7 @@
                                 <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0-0-0')"
                                    style="display:block;">
                                     <span class="nested-step">
-                                                Check profanity in given text: sample
+                                                Filter input text this is awesome by adding new text this,some by replacing  char in response format json
                                         </span>
                                 </a>
                                 <span class="evidence">
@@ -371,7 +383,7 @@
                         </td>
 
                         <td width="130"><span class="nested-step">SUCCESS</span></td>
-                        <td width="100"><span class="nested-step">0.14s</span></td>
+                        <td width="100"><span class="nested-step">2.71s</span></td>
                     </tr>
                         <tr>
                             <td colspan="5">
@@ -389,7 +401,7 @@
                         <td class="step-description-column">
                             <div class="step-description">
                                     <span class="nested-group-step">
-                                                GET https://www.purgomalum.com/service/containsprofanity?text=sample
+                                                GET https://www.purgomalum.com/service/json?text=this%20is%20awesome&amp;add=this%2Csome&amp;fill_char=
                                         </span>
                                 <span class="evidence">
                                         <span class="piece-of-evidence">
@@ -405,15 +417,15 @@
                             <div class="card">
                                 <div class="card-body">
                                     <h4>Response</h4>
-                                        <p>URL: https://www.purgomalum.com/service/containsprofanity?text=sample</p>
+                                        <p>URL: https://www.purgomalum.com/service/json?text=this%20is%20awesome&add=this%2Csome&fill_char=</p>
                                         <p>Status code: 200</p>
                                         <p>Content Type: null</p>
                                         <h4>Request Headers</h4>
                                         <pre>Accept=*/*</pre>
                                         <h4>Response Headers</h4>
-                                        <pre>Content-Type: text/plain<br>Access-Control-Allow-Origin: *<br>X-Cloud-Trace-Context: 64306707fe8411c6e0eb82ff3acaa41e<br>Date: Sun, 18 Jul 2021 21:33:17 GMT<br>Server: Google Frontend<br>Content-Length: 5</pre>
+                                        <pre>Content-Type: application/json<br>Access-Control-Allow-Origin: *<br>X-Cloud-Trace-Context: c430820acbebba34b5a44e10e804ed7b<br>Date: Sun, 18 Jul 2021 21:33:14 GMT<br>Server: Google Frontend<br>Content-Length: 28</pre>
                                     <h4>Response Body</h4>
-                                        <pre>false</pre>
+                                        <pre>{<br>    &quot;result&quot;: &quot;**** is awe****&quot;<br>}</pre>
                                 </div>
                             </div>
                         </div>
@@ -424,7 +436,7 @@
                         </td>
 
                         <td width="130"><span class="nested-group-step">SUCCESS</span></td>
-                        <td width="100"><span class="nested-group-step">0s</span></td>
+                        <td width="100"><span class="nested-group-step">0.01s</span></td>
                     </tr>
 
                                 </table>
@@ -450,7 +462,7 @@
                                 <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0-1')"
                                    style="display:block;">
                                     <span class="nested-step">
-                                                Then he should be shown with the "false" in plain text format
+                                                Then he should be able to view the "**** is awe****" returned in requested "json"
                                         </span>
                                 </a>
                                 <span class="evidence">
@@ -459,7 +471,7 @@
                         </td>
 
                         <td width="130"><span class="nested-step">SUCCESS</span></td>
-                        <td width="100"><span class="nested-step">0s</span></td>
+                        <td width="100"><span class="nested-step">0.7s</span></td>
                     </tr>
                         <tr>
                             <td colspan="5">
@@ -477,7 +489,7 @@
                         <td class="step-description-column">
                             <div class="step-description">
                                     <span class="nested-group-step">
-                                                Validate containsProfanity response false
+                                                Validate response 'result' **** is awe**** in format json
                                         </span>
                                 <span class="evidence">
                                 </span>
@@ -485,7 +497,7 @@
                         </td>
 
                         <td width="130"><span class="nested-group-step">SUCCESS</span></td>
-                        <td width="100"><span class="nested-group-step">0s</span></td>
+                        <td width="100"><span class="nested-group-step">0.65s</span></td>
                     </tr>
 
                                 </table>
@@ -511,7 +523,7 @@
                                 <a href="javaScript:void(0)" onClick="toggleDiv('stepSection1')"
                                    style="display:block;">
                                     <span class="top-level-step">
-                                                2: Checking profanity content in a given text ({text=smarta$$, result=true})
+                                                2: Filtering profanity for valid texts after adding new valid profanity string ({text=this is a test, format=xml, profanity String=a, replacement char=-, filtered text=this is - test})
                                         </span>
                                 </a>
                                 <span class="evidence">
@@ -520,7 +532,7 @@
                         </td>
 
                         <td width="130"><span class="top-level-step">SUCCESS</span></td>
-                        <td width="100"><span class="top-level-step">0.14s</span></td>
+                        <td width="100"><span class="top-level-step">0.36s</span></td>
                     </tr>
                         <tr>
                             <td colspan="5">
@@ -542,7 +554,7 @@
                                 <a href="javaScript:void(0)" onClick="toggleDiv('stepSection1-0')"
                                    style="display:block;">
                                     <span class="nested-step">
-                                                When Siva requests a "smarta$$" to be checked for profanity
+                                                When Siva requests a "this is a test" after filtering using new "a" by replacing with "-" character in "xml"
                                         </span>
                                 </a>
                                 <span class="evidence">
@@ -551,7 +563,7 @@
                         </td>
 
                         <td width="130"><span class="nested-step">SUCCESS</span></td>
-                        <td width="100"><span class="nested-step">0.13s</span></td>
+                        <td width="100"><span class="nested-step">0.24s</span></td>
                     </tr>
                         <tr>
                             <td colspan="5">
@@ -573,7 +585,7 @@
                                 <a href="javaScript:void(0)" onClick="toggleDiv('stepSection1-0-0')"
                                    style="display:block;">
                                     <span class="nested-step">
-                                                Check profanity in given text: smarta$$
+                                                Filter input text this is a test by adding new text a by replacing - char in response format xml
                                         </span>
                                 </a>
                                 <span class="evidence">
@@ -582,7 +594,7 @@
                         </td>
 
                         <td width="130"><span class="nested-step">SUCCESS</span></td>
-                        <td width="100"><span class="nested-step">0.13s</span></td>
+                        <td width="100"><span class="nested-step">0.23s</span></td>
                     </tr>
                         <tr>
                             <td colspan="5">
@@ -600,7 +612,7 @@
                         <td class="step-description-column">
                             <div class="step-description">
                                     <span class="nested-group-step">
-                                                GET https://www.purgomalum.com/service/containsprofanity?text=smarta%24%24
+                                                GET https://www.purgomalum.com/service/xml?text=this%20is%20a%20test&amp;add=a&amp;fill_char=-
                                         </span>
                                 <span class="evidence">
                                         <span class="piece-of-evidence">
@@ -616,15 +628,15 @@
                             <div class="card">
                                 <div class="card-body">
                                     <h4>Response</h4>
-                                        <p>URL: https://www.purgomalum.com/service/containsprofanity?text=smarta%24%24</p>
+                                        <p>URL: https://www.purgomalum.com/service/xml?text=this%20is%20a%20test&add=a&fill_char=-</p>
                                         <p>Status code: 200</p>
                                         <p>Content Type: null</p>
                                         <h4>Request Headers</h4>
                                         <pre>Accept=*/*</pre>
                                         <h4>Response Headers</h4>
-                                        <pre>Content-Type: text/plain<br>Access-Control-Allow-Origin: *<br>X-Cloud-Trace-Context: c5f461782a9df2879270272f7e17c05f<br>Date: Sun, 18 Jul 2021 21:33:17 GMT<br>Server: Google Frontend<br>Content-Length: 4</pre>
+                                        <pre>Content-Type: application/xml<br>Access-Control-Allow-Origin: *<br>X-Cloud-Trace-Context: 6e0d3e9913707d58b0299bf9ac1ffcef<br>Date: Sun, 18 Jul 2021 21:33:15 GMT<br>Server: Google Frontend<br>Content-Length: 145</pre>
                                     <h4>Response Body</h4>
-                                        <pre>true</pre>
+                                        <pre>&lt;PurgoMalum xmlns=&quot;http://www.purgomalum.com&quot;&gt;<br>  &lt;result&gt;this is - test&lt;/result&gt;<br>&lt;/PurgoMalum&gt;</pre>
                                 </div>
                             </div>
                         </div>
@@ -661,7 +673,7 @@
                                 <a href="javaScript:void(0)" onClick="toggleDiv('stepSection1-1')"
                                    style="display:block;">
                                     <span class="nested-step">
-                                                Then he should be shown with the "true" in plain text format
+                                                Then he should be able to view the "this is - test" returned in requested "xml"
                                         </span>
                                 </a>
                                 <span class="evidence">
@@ -670,7 +682,7 @@
                         </td>
 
                         <td width="130"><span class="nested-step">SUCCESS</span></td>
-                        <td width="100"><span class="nested-step">0s</span></td>
+                        <td width="100"><span class="nested-step">0.12s</span></td>
                     </tr>
                         <tr>
                             <td colspan="5">
@@ -688,7 +700,7 @@
                         <td class="step-description-column">
                             <div class="step-description">
                                     <span class="nested-group-step">
-                                                Validate containsProfanity response true
+                                                Validate response 'result' this is - test in format xml
                                         </span>
                                 <span class="evidence">
                                 </span>
@@ -696,218 +708,7 @@
                         </td>
 
                         <td width="130"><span class="nested-group-step">SUCCESS</span></td>
-                        <td width="100"><span class="nested-group-step">0s</span></td>
-                    </tr>
-
-                                </table>
-                            </td>
-                        </tr>
-
-                                </table>
-                            </td>
-                        </tr>
-                    <tr class="test-SUCCESS">
-
-                        <td width="50" class="step-icon">
-                            <a name="2"></a>
-                                <a href="javaScript:void(0)" onClick="toggleDiv('stepSection2')"
-                                   style="display:block">
-                                    <i class="fa fa-plus-square-o imgstepSection2 success-icon"
-                                       style="margin-left: 20px; float:left; padding-right:5px"></i>
-                                </a>
-                        </td>
-
-                        <td class="step-description-column">
-                            <div class="step-description">
-                                <a href="javaScript:void(0)" onClick="toggleDiv('stepSection2')"
-                                   style="display:block;">
-                                    <span class="top-level-step">
-                                                3: Checking profanity content in a given text ({text=class, result=false})
-                                        </span>
-                                </a>
-                                <span class="evidence">
-                                </span>
-                            </div>
-                        </td>
-
-                        <td width="130"><span class="top-level-step">SUCCESS</span></td>
-                        <td width="100"><span class="top-level-step">0.14s</span></td>
-                    </tr>
-                        <tr>
-                            <td colspan="5">
-                                <table id="stepSection2" class="step-table-nested" style="display:none;">
-
-                    <tr class="test-SUCCESS">
-
-                        <td width="70" class="step-icon">
-                            <a name="2-0"></a>
-                                <a href="javaScript:void(0)" onClick="toggleDiv('stepSection2-0')"
-                                   style="display:block">
-                                    <i class="fa fa-plus-square-o imgstepSection2-0 success-icon"
-                                       style="margin-left: 40px; float:left; padding-right:5px"></i>
-                                </a>
-                        </td>
-
-                        <td class="step-description-column">
-                            <div class="step-description">
-                                <a href="javaScript:void(0)" onClick="toggleDiv('stepSection2-0')"
-                                   style="display:block;">
-                                    <span class="nested-step">
-                                                When Siva requests a "class" to be checked for profanity
-                                        </span>
-                                </a>
-                                <span class="evidence">
-                                </span>
-                            </div>
-                        </td>
-
-                        <td width="130"><span class="nested-step">SUCCESS</span></td>
-                        <td width="100"><span class="nested-step">0.14s</span></td>
-                    </tr>
-                        <tr>
-                            <td colspan="5">
-                                <table id="stepSection2-0" class="step-table-nested" style="display:none;">
-
-                    <tr class="test-SUCCESS">
-
-                        <td width="90" class="step-icon">
-                            <a name="2-0-0"></a>
-                                <a href="javaScript:void(0)" onClick="toggleDiv('stepSection2-0-0')"
-                                   style="display:block">
-                                    <i class="fa fa-plus-square-o imgstepSection2-0-0 success-icon"
-                                       style="margin-left: 60px; float:left; padding-right:5px"></i>
-                                </a>
-                        </td>
-
-                        <td class="step-description-column">
-                            <div class="step-description">
-                                <a href="javaScript:void(0)" onClick="toggleDiv('stepSection2-0-0')"
-                                   style="display:block;">
-                                    <span class="nested-step">
-                                                Check profanity in given text: class
-                                        </span>
-                                </a>
-                                <span class="evidence">
-                                </span>
-                            </div>
-                        </td>
-
-                        <td width="130"><span class="nested-step">SUCCESS</span></td>
-                        <td width="100"><span class="nested-step">0.13s</span></td>
-                    </tr>
-                        <tr>
-                            <td colspan="5">
-                                <table id="stepSection2-0-0" class="step-table-nested" style="display:none;">
-
-                    <tr class="test-SUCCESS">
-
-                        <td width="110" class="step-icon">
-                            <a name="2-0-0-0"></a>
-                                <span style="margin-left: 80px;"
-                                      class="nested-group-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a>
-                                </span>
-                        </td>
-
-                        <td class="step-description-column">
-                            <div class="step-description">
-                                    <span class="nested-group-step">
-                                                GET https://www.purgomalum.com/service/containsprofanity?text=class
-                                        </span>
-                                <span class="evidence">
-                                        <span class="piece-of-evidence">
-                    <span>
-                        <button type="button" class="btn btn-success btn-sm" data-toggle="collapse"
-                                data-target="#restModal-REST-16">
-                            REST Query
-                        </button>
-                    </span>
-                    <!-- Modal -->
-                    <div class="rest-query-details">
-                        <div class="collapse multi-collapse" id="restModal-REST-16">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h4>Response</h4>
-                                        <p>URL: https://www.purgomalum.com/service/containsprofanity?text=class</p>
-                                        <p>Status code: 200</p>
-                                        <p>Content Type: null</p>
-                                        <h4>Request Headers</h4>
-                                        <pre>Accept=*/*</pre>
-                                        <h4>Response Headers</h4>
-                                        <pre>Content-Type: text/plain<br>Access-Control-Allow-Origin: *<br>X-Cloud-Trace-Context: 3fb10302089d30a6ca4685dc7281bd0a<br>Date: Sun, 18 Jul 2021 21:33:17 GMT<br>Server: Google Frontend<br>Content-Length: 5</pre>
-                                    <h4>Response Body</h4>
-                                        <pre>false</pre>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                                        </span>
-                                </span>
-                            </div>
-                        </td>
-
-                        <td width="130"><span class="nested-group-step">SUCCESS</span></td>
-                        <td width="100"><span class="nested-group-step">0s</span></td>
-                    </tr>
-
-                                </table>
-                            </td>
-                        </tr>
-
-                                </table>
-                            </td>
-                        </tr>
-                    <tr class="test-SUCCESS">
-
-                        <td width="70" class="step-icon">
-                            <a name="2-1"></a>
-                                <a href="javaScript:void(0)" onClick="toggleDiv('stepSection2-1')"
-                                   style="display:block">
-                                    <i class="fa fa-plus-square-o imgstepSection2-1 success-icon"
-                                       style="margin-left: 40px; float:left; padding-right:5px"></i>
-                                </a>
-                        </td>
-
-                        <td class="step-description-column">
-                            <div class="step-description">
-                                <a href="javaScript:void(0)" onClick="toggleDiv('stepSection2-1')"
-                                   style="display:block;">
-                                    <span class="nested-step">
-                                                Then he should be shown with the "false" in plain text format
-                                        </span>
-                                </a>
-                                <span class="evidence">
-                                </span>
-                            </div>
-                        </td>
-
-                        <td width="130"><span class="nested-step">SUCCESS</span></td>
-                        <td width="100"><span class="nested-step">0s</span></td>
-                    </tr>
-                        <tr>
-                            <td colspan="5">
-                                <table id="stepSection2-1" class="step-table-nested" style="display:none;">
-
-                    <tr class="test-SUCCESS">
-
-                        <td width="90" class="step-icon">
-                            <a name="2-1-0"></a>
-                                <span style="margin-left: 60px;"
-                                      class="nested-group-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a>
-                                </span>
-                        </td>
-
-                        <td class="step-description-column">
-                            <div class="step-description">
-                                    <span class="nested-group-step">
-                                                Validate containsProfanity response false
-                                        </span>
-                                <span class="evidence">
-                                </span>
-                            </div>
-                        </td>
-
-                        <td width="130"><span class="nested-group-step">SUCCESS</span></td>
-                        <td width="100"><span class="nested-group-step">0s</span></td>
+                        <td width="100"><span class="nested-group-step">0.11s</span></td>
                     </tr>
 
                                 </table>
@@ -920,7 +721,7 @@
                 <tr class="test-SUCCESS">
                         <td colspan="2"></td>
                     <td width="130"><span class="top-level-step"><em>SUCCESS</em></span></td>
-                    <td width="100"><span class="top-level-step"><em>0.47s</em></span></td>
+                    <td width="100"><span class="top-level-step"><em>4.32s</em></span></td>
                 </tr>
 
             </table>

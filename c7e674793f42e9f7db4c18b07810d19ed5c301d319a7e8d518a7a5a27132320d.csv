@@ -1,4 +1,5 @@
 "Story","Title","Result","Date","Stability","Duration (s)"
-"Adding new profanity string and updating input text with replacement text","Filtering profanity for valid texts after adding new valid profanity string","SUCCESS","2021-07-18T21:27:19.782Z[Etc/UTC]","0.0","4.17"
-"Checking profanity content in a given text","Checking profanity content in a given text","SUCCESS","2021-07-18T21:27:24.486Z[Etc/UTC]","0.0","0.47"
-"Filtering profanity for a given text","Filtering profanity for valid texts and providing results in multiple formats","SUCCESS","2021-07-18T21:27:24.98Z[Etc/UTC]","0.0","0.52"
+"Adding new profanity string and updating input character/text with replacement string","Filtering profanity for valid texts after adding new valid profanity string","SUCCESS","2021-07-18T21:33:11.28Z[Etc/UTC]","0.0","4.32"
+"Adding new profanity string and updating input text with replacement text","Filtering profanity for valid texts after adding new valid profanity string","SUCCESS","2021-07-18T21:33:16.202Z[Etc/UTC]","0.0","0.53"
+"Checking profanity content in a given text","Checking profanity content in a given text","SUCCESS","2021-07-18T21:33:17.233Z[Etc/UTC]","0.0","0.47"
+"Filtering profanity for a given text","Filtering profanity for valid texts and providing results in multiple formats","SUCCESS","2021-07-18T21:33:17.713Z[Etc/UTC]","0.0","0.45"
