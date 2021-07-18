@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Filtering profanity" skipped="0" tests="6" time="4.53" timestamp="2021-07-18 11:09:03"><testcase name="Filtering profanity for valid texts and providing results in multiple formats"/><testcase name="Filtering profanity for invalid texts and providing results in multiple formats"/></testsuite>
