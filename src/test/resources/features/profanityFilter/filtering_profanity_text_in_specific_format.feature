@@ -1,4 +1,4 @@
-Feature: Filtering profanity
+Feature: Filtering profanity for a given text
 
   @positive
   Scenario Outline: Filtering profanity for valid texts and providing results in multiple formats
