@@ -1,3 +1,3 @@
 "Story","Title","Result","Date","Stability","Duration (s)"
-"Adding new profanity string and updating input text with replacement text","Filtering profanity for valid texts after adding new invalid profanity string","SUCCESS","2021-07-18T21:27:23.953Z[Etc/UTC]","0.0","0.48"
+"Filtering profanity for a given text","Filtering profanity for valid texts and providing results in multiple formats","SUCCESS","2021-07-18T21:27:24.98Z[Etc/UTC]","0.0","0.52"
 "Filtering profanity for a given text","Filtering profanity for invalid texts and providing results in multiple formats","SUCCESS","2021-07-18T21:27:25.502Z[Etc/UTC]","0.0","0.42"
