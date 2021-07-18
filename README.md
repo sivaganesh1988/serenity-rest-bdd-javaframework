@@ -2,6 +2,9 @@
 
 Test Automation project to demonstrate the automation of a webservice which helps in filtering profanity, obscenity and other unwanted text
 
+## CI status
+[![Java CI with Maven](https://github.com/sivaganesh1988/profanity-filter-test/actions/workflows/maven.yml/badge.svg?branch=main)](https://github.com/sivaganesh1988/profanity-filter-test/actions/workflows/maven.yml)
+
 ## Objective
 
 To demonstrate the ability to create an API automation framework from scratch which uses BDD format scenarios and follows SOLID principles for implementing design pattern
